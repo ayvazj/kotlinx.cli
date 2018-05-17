@@ -1,6 +1,6 @@
 package kotlinx.cli
 
-import org.junit.Test
+import kotlin.test.Test
 
 class TestAntExample {
     @Test fun testAntExample() {
@@ -74,7 +74,7 @@ class TestAntExample {
             }
 
     private fun Event<Pair<String, String>>.storeToMap(): ArgumentValue<Map<String, String>> {
-        val map = hashMapOf<String, String>()
+        val map = mutableMapOf<String, String>()
         add { (key, value) -> map[key] = value }
         return ArgumentStorage(map)
     }

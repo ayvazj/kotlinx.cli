@@ -1,7 +1,8 @@
 package kotlinx.cli
 
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.AssertionError
 
 class TestDoubleDash {
     @Test fun testDoubleDash() {
